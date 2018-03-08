@@ -11,6 +11,8 @@ import { LancamentosPesquisaComponent } from './lancamentos-pesquisa/lancamentos
 import { NavbarComponent } from './navbar/navbar.component';
 import { PessoasPesquisaComponent } from './pessoas-pesquisa/pessoas-pesquisa.component';
 import { CampoColoridoDirective } from './campo-colorido.directive';
+import { PessoaFormComponent } from './pessoa-form/pessoa-form.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -19,14 +21,16 @@ import { CampoColoridoDirective } from './campo-colorido.directive';
     LancamentosPesquisaComponent,
     NavbarComponent,
     PessoasPesquisaComponent,
-    CampoColoridoDirective
+    CampoColoridoDirective,
+    PessoaFormComponent
   ],
   imports: [
     BrowserModule,
     InputTextModule,
     ButtonModule,
     DataTableModule,
-    TooltipModule
+    TooltipModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

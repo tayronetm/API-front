@@ -4,7 +4,8 @@ import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
 import { DataTableModule } from 'primeng/datatable';
 import { TooltipModule } from 'primeng/components/tooltip/tooltip';
-import {  InputTextareaModule } from 'primeng/components/inputtextarea/inputtextarea'
+import { InputTextareaModule } from 'primeng/components/inputtextarea/inputtextarea';
+import { InputMaskModule } from 'primeng/components/inputmask/inputmask';
 
 
 import { AppComponent } from './app.component';
@@ -12,9 +13,10 @@ import { LancamentosPesquisaComponent } from './lancamentos-pesquisa/lancamentos
 import { NavbarComponent } from './navbar/navbar.component';
 import { PessoasPesquisaComponent } from './pessoas-pesquisa/pessoas-pesquisa.component';
 import { CampoColoridoDirective } from './campo-colorido.directive';
-import { PessoaFormComponent } from './pessoa-form/pessoa-form.component';
 import { FormsModule } from '@angular/forms';
 import { LancamentoCadastroComponent } from './lancamento-cadastro/lancamento-cadastro.component';
+import { PessoaCadastroComponent } from './pessoa-cadastro/pessoa-cadastro.component';
+import { MessageComponent } from './message/message.component';
 
 
 @NgModule({
@@ -24,8 +26,9 @@ import { LancamentoCadastroComponent } from './lancamento-cadastro/lancamento-ca
     NavbarComponent,
     PessoasPesquisaComponent,
     CampoColoridoDirective,
-    PessoaFormComponent,
-    LancamentoCadastroComponent
+    LancamentoCadastroComponent,
+    PessoaCadastroComponent,
+    MessageComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +37,8 @@ import { LancamentoCadastroComponent } from './lancamento-cadastro/lancamento-ca
     DataTableModule,
     TooltipModule,
     FormsModule,
-    InputTextareaModule
+    InputTextareaModule,
+    InputMaskModule
   ],
   providers: [],
   bootstrap: [AppComponent]

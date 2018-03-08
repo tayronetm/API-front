@@ -4,6 +4,7 @@ import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
 import { DataTableModule } from 'primeng/datatable';
 import { TooltipModule } from 'primeng/components/tooltip/tooltip';
+import {  InputTextareaModule } from 'primeng/components/inputtextarea/inputtextarea'
 
 
 import { AppComponent } from './app.component';
@@ -13,6 +14,7 @@ import { PessoasPesquisaComponent } from './pessoas-pesquisa/pessoas-pesquisa.co
 import { CampoColoridoDirective } from './campo-colorido.directive';
 import { PessoaFormComponent } from './pessoa-form/pessoa-form.component';
 import { FormsModule } from '@angular/forms';
+import { LancamentoCadastroComponent } from './lancamento-cadastro/lancamento-cadastro.component';
 
 
 @NgModule({
@@ -22,7 +24,8 @@ import { FormsModule } from '@angular/forms';
     NavbarComponent,
     PessoasPesquisaComponent,
     CampoColoridoDirective,
-    PessoaFormComponent
+    PessoaFormComponent,
+    LancamentoCadastroComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +33,8 @@ import { FormsModule } from '@angular/forms';
     ButtonModule,
     DataTableModule,
     TooltipModule,
-    FormsModule
+    FormsModule,
+    InputTextareaModule
   ],
   providers: [],
   bootstrap: [AppComponent]

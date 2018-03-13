@@ -1,3 +1,4 @@
+import { PessoaService } from './pessoas/pessoa.service';
 import { LancamentoService } from './lancamentos/lancamento.service';
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
@@ -9,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { ToastyModule } from 'ng2-toasty';
 
 
 @NgModule({
@@ -22,10 +24,12 @@ import { NgModule } from '@angular/core';
     CoreModule,
     LancamentosModule,
     PessoasModule,
-    HttpModule
+    HttpModule,
+    ToastyModule.forRoot()
   ],
   providers: [
-    LancamentoService
+    LancamentoService,
+    PessoaService
   ],
   bootstrap: [AppComponent]
 })

@@ -6,6 +6,8 @@ import { DataTableModule } from 'primeng/datatable';
 import { TooltipModule } from 'primeng/components/tooltip/tooltip';
 import { InputTextareaModule } from 'primeng/components/inputtextarea/inputtextarea';
 import { InputMaskModule } from 'primeng/components/inputmask/inputmask';
+import { CalendarModule } from 'primeng/components/calendar/calendar';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 import { AppComponent } from './app.component';
@@ -17,6 +19,7 @@ import { FormsModule } from '@angular/forms';
 import { LancamentoCadastroComponent } from './lancamento-cadastro/lancamento-cadastro.component';
 import { PessoaCadastroComponent } from './pessoa-cadastro/pessoa-cadastro.component';
 import { MessageComponent } from './message/message.component';
+import { LancamentosGridComponent } from './lancamentos-grid/lancamentos-grid.component';
 
 
 @NgModule({
@@ -28,7 +31,8 @@ import { MessageComponent } from './message/message.component';
     CampoColoridoDirective,
     LancamentoCadastroComponent,
     PessoaCadastroComponent,
-    MessageComponent
+    MessageComponent,
+    LancamentosGridComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +42,9 @@ import { MessageComponent } from './message/message.component';
     TooltipModule,
     FormsModule,
     InputTextareaModule,
-    InputMaskModule
+    InputMaskModule,
+    CalendarModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

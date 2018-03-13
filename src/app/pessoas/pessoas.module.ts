@@ -1,3 +1,5 @@
+import { InputTextModule } from 'primeng/components/inputtext/inputtext';
+import { ButtonModule } from 'primeng/components/button/button';
 import { SharedModule } from './../shared/shared.module';
 import { DataTableModule } from 'primeng/datatable';
 import { InputMaskModule } from 'primeng/components/inputmask/inputmask';
@@ -18,7 +20,9 @@ import { TooltipModule } from 'primeng/components/tooltip/tooltip';
     InputMaskModule,
     DataTableModule,
     TooltipModule,
-    SharedModule
+    SharedModule,
+    ButtonModule,
+    InputTextModule
   ],
   declarations: [
 

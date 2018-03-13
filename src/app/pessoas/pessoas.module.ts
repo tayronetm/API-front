@@ -1,3 +1,4 @@
+import { SharedModule } from './../shared/shared.module';
 import { DataTableModule } from 'primeng/datatable';
 import { InputMaskModule } from 'primeng/components/inputmask/inputmask';
 import { BrowserModule } from '@angular/platform-browser';
@@ -7,7 +8,6 @@ import { PessoaCadastroComponent } from './pessoa-cadastro/pessoa-cadastro.compo
 import { PessoasGridComponent } from './pessoas-grid/pessoas-grid.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MessageComponent } from '../message/message.component';
 import { TooltipModule } from 'primeng/components/tooltip/tooltip';
 
 
@@ -17,21 +17,20 @@ import { TooltipModule } from 'primeng/components/tooltip/tooltip';
     FormsModule,
     InputMaskModule,
     DataTableModule,
-    TooltipModule
+    TooltipModule,
+    SharedModule
   ],
   declarations: [
 
     PessoasPesquisaComponent,
     PessoaCadastroComponent,
-    PessoasGridComponent,
-    MessageComponent
+    PessoasGridComponent
   ],
   exports: [
 
     PessoasPesquisaComponent,
     PessoaCadastroComponent,
-    PessoasGridComponent,
-    MessageComponent
+    PessoasGridComponent
   ]
 })
 export class PessoasModule { }

@@ -8,6 +8,9 @@ import { InputTextareaModule } from 'primeng/components/inputtextarea/inputtexta
 import { InputMaskModule } from 'primeng/components/inputmask/inputmask';
 import { CalendarModule } from 'primeng/components/calendar/calendar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SelectButtonModule } from 'primeng/components/selectbutton/selectbutton'
+import { DropdownModule } from 'primeng/components/dropdown/dropdown';
+import { CurrencyMaskModule } from "ng2-currency-mask"; 
 
 
 import { AppComponent } from './app.component';
@@ -20,6 +23,7 @@ import { LancamentoCadastroComponent } from './lancamento-cadastro/lancamento-ca
 import { PessoaCadastroComponent } from './pessoa-cadastro/pessoa-cadastro.component';
 import { MessageComponent } from './message/message.component';
 import { LancamentosGridComponent } from './lancamentos-grid/lancamentos-grid.component';
+import { PessoasGridComponent } from './pessoas-grid/pessoas-grid.component';
 
 
 @NgModule({
@@ -32,19 +36,26 @@ import { LancamentosGridComponent } from './lancamentos-grid/lancamentos-grid.co
     LancamentoCadastroComponent,
     PessoaCadastroComponent,
     MessageComponent,
-    LancamentosGridComponent
+    LancamentosGridComponent,
+    PessoasGridComponent
   ],
   imports: [
     BrowserModule,
     InputTextModule,
     ButtonModule,
+    FormsModule,
     DataTableModule,
     TooltipModule,
     FormsModule,
     InputTextareaModule,
     InputMaskModule,
     CalendarModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    SelectButtonModule,
+    DropdownModule,
+    CurrencyMaskModule,
+    InputMaskModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

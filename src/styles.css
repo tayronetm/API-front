@@ -37,3 +37,7 @@ label{
 .ui-button-icon-only .ui-button-text, .ui-button-text-empty .ui-button-text{
     overflow: initial;
 }
+
+.ui-dropdown-filter-container{
+    width:100%;
+}

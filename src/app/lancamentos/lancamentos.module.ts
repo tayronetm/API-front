@@ -38,8 +38,6 @@ import { RouterModule } from '@angular/router';
     LancamentosPesquisaComponent
   ],
   exports: [
-    LancamentoCadastroComponent,
-    LancamentosPesquisaComponent
   ]
 })
 export class LancamentosModule { }

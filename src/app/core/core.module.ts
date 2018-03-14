@@ -10,6 +10,7 @@ import { PessoaService } from '../pessoas/pessoa.service';
 import { LancamentoService } from '../lancamentos/lancamento.service';
 import { CategoriaService } from '../categorias/categoria.service';
 import { RouterModule } from '@angular/router';
+import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada.component';
 
 @NgModule({
   imports: [
@@ -19,7 +20,8 @@ import { RouterModule } from '@angular/router';
     RouterModule
   ],
   declarations: [
-    NavbarComponent
+    NavbarComponent,
+    PaginaNaoEncontradaComponent
   ],
   exports:[
     NavbarComponent,

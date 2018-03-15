@@ -1,18 +1,27 @@
+<!-- View do componente navbar -->
 
-
+<!-- icone de três barras da navbar -->
 <nav class="navbar">
   <div class="container">
-      <div class="ui-g">
-          <div class="ui-g-12">
-              <a href="javascript:;" class="navbar-toggle" (click)="showMain = !showMain"><i class="fa fa-bars"></i></a>
-          </div>
+    <div class="ui-g">
+      <div class="ui-g-12">
+        <a href="javascript:;" class="navbar-toggle" (click)="showMain = !showMain">
+          <i class="fa fa-bars"></i>
+        </a>
       </div>
+    </div>
   </div>
-
+  <!-- barra lateral de menu -->
   <ul class="animated fadeInRightBig navbar-menu" [hidden]="!showMain">
-      <li class="navbar-usuario">José da Silva</li>
-      <li class="navbar-menuitem" routerLinkActive="ativo"><a routerLink="/lancamentos">Lançamentos</a></li>
-      <li class="navbar-menuitem" routerLinkActive="ativo"><a routerLink="/pessoas">Pessoas</a></li>
-      <li class="navbar-menuitem"><a routerLink="pessoas/novo">Logout</a></li>
+    <li class="navbar-usuario">José da Silva</li>
+    <li class="navbar-menuitem" routerLinkActive="ativo">
+      <a routerLink="/lancamentos">Lançamentos</a>
+    </li>
+    <li class="navbar-menuitem" routerLinkActive="ativo">
+      <a routerLink="/pessoas">Pessoas</a>
+    </li>
+    <li class="navbar-menuitem">
+      <a routerLink="pessoas/novo">Logout</a>
+    </li>
   </ul>
 </nav>

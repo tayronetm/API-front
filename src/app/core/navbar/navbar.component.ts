@@ -1,3 +1,4 @@
+//Configuração do componente
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -8,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
     './animate.css'
   ]
 })
+
 export class NavbarComponent implements OnInit {
 
   constructor() { }

@@ -45,7 +45,7 @@ export class LancamentoService {
     }
 
     return this.http.get(`${this.lancamentosUrl}?resumo`,
-        { headers, search: params })
+      { headers, search: params })
       .toPromise()
       .then(response => {
         const responseJson = response.json();
@@ -75,7 +75,7 @@ export class LancamentoService {
     headers.append('Content-Type', 'application/json');
 
     return this.http.post(this.lancamentosUrl,
-        JSON.stringify(lancamento), { headers })
+      JSON.stringify(lancamento), { headers })
       .toPromise()
       .then(response => response.json());
   }
@@ -86,7 +86,7 @@ export class LancamentoService {
     headers.append('Content-Type', 'application/json');
 
     return this.http.put(`${this.lancamentosUrl}/${lancamento.codigo}`,
-        JSON.stringify(lancamento), { headers })
+      JSON.stringify(lancamento), { headers })
       .toPromise()
       .then(response => {
         const lancamentoAlterado = response.json() as Lancamento;

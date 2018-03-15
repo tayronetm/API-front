@@ -11,6 +11,7 @@ import { LancamentoService } from '../lancamentos/lancamento.service';
 import { CategoriaService } from '../categorias/categoria.service';
 import { RouterModule } from '@angular/router';
 import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada.component';
+import { Title } from '@angular/platform-browser';
 
 @NgModule({
   imports: [
@@ -23,17 +24,17 @@ import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada.component'
     NavbarComponent,
     PaginaNaoEncontradaComponent
   ],
-  exports:[
+  exports: [
     NavbarComponent,
     ToastyModule,
     ConfirmDialogModule
   ],
-  providers:[
+  providers: [
     ErrorHandlerService,
     LancamentoService,
     PessoaService,
     ConfirmationService,
-
+    Title,
     CategoriaService
   ]
 

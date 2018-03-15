@@ -1,49 +1,48 @@
-.navbar{
-    padding: 10px 0;
-    background-color: #1e94e2;
+.navbar {
+  padding: 10px 0;
+  background-color: #1e94e2;
 }
 
-.navbar-toggle{
-    color: #fff;
+.navbar-toggle {
+  color: #fff;
 }
 
-.navbar-menu{
-    background-color: #3a3633;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    opacity: 0.5;
-    width: 200px;
-    margin: 0;
-    padding: 0;
-    z-index: 999;
-    list-style: none;
+.navbar-menu {
+  background-color: #3a3633;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.5;
+  width: 200px;
+  margin: 0;
+  padding: 0;
+  z-index: 999;
+  list-style: none;
 }
 
-.navbar-usuario{
-    color: white;
-    margin-bottom: 15px;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 15px;
-    border-bottom: 1px solid #525151
-    
+.navbar-usuario {
+  color: white;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 15px;
+  border-bottom: 1px solid #525151
 }
 
-.navbar-menuitem{
-    padding: 15px;
+.navbar-menuitem {
+  padding: 15px;
 }
 
-.navbar-menuitem a{
-    color: #c0bbb7;
-    text-decoration: none;
+.navbar-menuitem a {
+  color: #c0bbb7;
+  text-decoration: none;
 }
 
-.navbar-menuitem a:hover{
-    color: #fff;
+.navbar-menuitem a:hover {
+  color: #fff;
 }
 
-.navbar-menuitem.ativo{
-    background-color: #494541;
+.navbar-menuitem.ativo {
+  background-color: #494541;
 }

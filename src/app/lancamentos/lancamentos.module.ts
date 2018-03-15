@@ -1,4 +1,4 @@
-import { LancamentosRoutingModule } from './lancamentos-routing.module';
+import { LancamentosRouting } from './lancamentos.routing';
 import { SharedModule } from './../shared/shared.module';
 import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
@@ -31,7 +31,7 @@ import { RouterModule } from '@angular/router';
     RouterModule,
     CurrencyMaskModule,
     SharedModule,
-    LancamentosRoutingModule
+    LancamentosRouting
   ],
   declarations: [
     LancamentoCadastroComponent,

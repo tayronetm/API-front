@@ -5,7 +5,7 @@ import { CommonModule } from '@angular/common';
 import { ButtonModule } from 'primeng/components/button/button';
 import { InputTextModule } from 'primeng/components/inputtext/inputtext';
 
-import { SegurancaRoutingModule } from './seguranca-routing.module';
+import { SegurancaRouting } from './seguranca.routing';
 import { LoginFormComponent } from './login-form/login-form.component';
 
 @NgModule({
@@ -16,7 +16,7 @@ import { LoginFormComponent } from './login-form/login-form.component';
     InputTextModule,
     ButtonModule,
 
-    SegurancaRoutingModule
+    SegurancaRouting
   ],
   declarations: [LoginFormComponent]
 })

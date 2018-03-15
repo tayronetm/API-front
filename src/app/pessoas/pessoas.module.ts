@@ -1,3 +1,4 @@
+import { PessoasRoutingModule } from './pessoas-routing.module';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
@@ -21,7 +22,8 @@ import { PessoaCadastroComponent } from './pessoa-cadastro/pessoa-cadastro.compo
     TooltipModule,
     InputMaskModule,
     RouterModule,
-    SharedModule
+    SharedModule,
+    PessoasRoutingModule
   ],
   declarations: [
     PessoaCadastroComponent,

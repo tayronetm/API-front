@@ -1,5 +1,7 @@
-import { Headers, Http } from '@angular/http';
 import { Injectable } from '@angular/core';
+import { Http, Headers } from '@angular/http';
+
+import 'rxjs/add/operator/toPromise';
 
 @Injectable()
 export class CategoriaService {
@@ -8,19 +10,13 @@ export class CategoriaService {
 
   constructor(private http: Http) { }
 
-
-// serviço para listar as categorias-----------------------------------------------------------------
   listarTodas(): Promise<any> {
-
     const headers = new Headers();
     headers.append('Authorization', 'Basic YWRtaW5AYWxnYW1vbmV5LmNvbTphZG1pbg==');
 
-//método requisição http GET
     return this.http.get(this.categoriasUrl, { headers })
       .toPromise()
       .then(response => response.json());
-
   }
-// serviço para listar as categorias-----------------------------------------------------------------
 
 }

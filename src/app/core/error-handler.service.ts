@@ -15,19 +15,48 @@ export class ErrorHandlerService {
       msg = errorResponse;
 
     } else if (errorResponse instanceof Response
-        && errorResponse.status >= 400 && errorResponse.status <= 499) {
+        && errorResponse.status === 401) {
       let errors;
-      msg = 'Ocorreu um erro ao processar a sua solicitação';
+      msg = 'Você não está logado!';
 
       try {
         errors = errorResponse.json();
 
         msg = errors[0].mensagemUsuario;
       } catch (e) { }
+      
 
       console.error('Ocorreu um erro', errorResponse);
 
-    } else {
+    } 
+    else if (errorResponse instanceof Response
+      && errorResponse.status === 0) {
+    let errors;
+    msg = 'Conexão recusada! Verifique se o backend foi iniciado.';
+
+    try {
+      errors = errorResponse.json();
+
+      msg = errors[0].mensagemUsuario;
+    } catch (e) { }
+    
+
+    console.error('Ocorreu um erro', errorResponse);
+
+  } 
+    else if (errorResponse instanceof Response
+      && errorResponse.status >= 402 && errorResponse.status <= 499) {
+    let errors;
+    msg = 'Ocorreu um erro ao processar a sua solicitação';
+
+    try {
+      errors = errorResponse.json();
+
+      msg = errors[0].mensagemUsuario;
+    } catch (e) { }
+  }
+    else {
+      console.log("erro"+errorResponse);
       msg = 'Erro ao processar serviço remoto. Tente novamente.';
       console.error('Ocorreu um erro', errorResponse);
     }

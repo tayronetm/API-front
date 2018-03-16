@@ -21,4 +21,9 @@ export class AppComponent {
     return this.router.url !== '/login';
   }
 
+  exibindoLoading() {
+    return this.router.url !== '/login';
+  }
+
+
 }

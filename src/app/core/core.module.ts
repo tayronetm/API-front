@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import { NgModule, LOCALE_ID } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { LoadingBarRouterModule } from '@ngx-loading-bar/router';
 import { ConfirmationService } from 'primeng/components/common/api';
 import { ConfirmDialogModule } from 'primeng/components/confirmdialog/confirmdialog';
 import { ToastyModule } from 'ng2-toasty';
@@ -20,6 +21,7 @@ import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada.component'
   imports: [
     CommonModule,
     RouterModule,
+    LoadingBarRouterModule,
 
     ToastyModule.forRoot(),
     ConfirmDialogModule,
@@ -28,7 +30,8 @@ import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada.component'
   exports: [
     NavbarComponent,
     ToastyModule,
-    ConfirmDialogModule
+    ConfirmDialogModule,
+    LoadingBarRouterModule
   ],
   providers: [
     LancamentoService,

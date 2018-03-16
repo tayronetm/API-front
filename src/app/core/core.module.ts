@@ -1,4 +1,5 @@
 import { AuthService } from './../seguranca/auth.service';
+import { JwtHelper } from 'angular2-jwt';
 import { Title } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { NgModule, LOCALE_ID } from '@angular/core';
@@ -37,6 +38,7 @@ import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada.component'
     AuthService,
     
     ConfirmationService,
+    JwtHelper,
     Title
     
   ]

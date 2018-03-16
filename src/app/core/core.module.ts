@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 import { AuthService } from './../seguranca/auth.service';
-=======
->>>>>>> 0385db708c486563888754151eaf920ed036f743
 import { Title } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { NgModule, LOCALE_ID } from '@angular/core';

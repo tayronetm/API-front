@@ -46,8 +46,7 @@ import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada.component'
 
     ConfirmationService,
     JwtHelper,
-    Title,
-    { provide: LOCALE_ID, useValue: 'pt-BR' }
+    Title
   ]
 })
 export class CoreModule { }

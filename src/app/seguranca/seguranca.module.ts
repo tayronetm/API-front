@@ -1,18 +1,18 @@
-import { MoneyHttp } from './money-http';
+import { Http, RequestOptions } from '@angular/http';
 import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AuthHttp, AuthConfig } from 'angular2-jwt'
 
+import { AuthHttp, AuthConfig } from 'angular2-jwt';
 import { ButtonModule } from 'primeng/components/button/button';
 import { InputTextModule } from 'primeng/components/inputtext/inputtext';
 
 import { AuthGuard } from './auth.guard';
+import { LogoutService } from './logout.service';
+import { AuthService } from './auth.service';
+import { MoneyHttp } from './money-http';
 import { SegurancaRouting } from './seguranca.routing';
 import { LoginFormComponent } from './login-form/login-form.component';
-import { Http, RequestOptions } from '@angular/http';
-import { AuthService } from './auth.service';
-
 
 export function authHttpServiceFactory(auth: AuthService, http: Http, options: RequestOptions) {
   const config = new AuthConfig({
@@ -41,7 +41,8 @@ export function authHttpServiceFactory(auth: AuthService, http: Http, options: R
       useFactory: authHttpServiceFactory,
       deps: [AuthService, Http, RequestOptions]
     },
-    AuthGuard
+    AuthGuard,
+    LogoutService
   ]
 })
 export class SegurancaModule { }

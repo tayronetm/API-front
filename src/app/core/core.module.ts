@@ -17,6 +17,7 @@ import { LancamentoService } from './../lancamentos/lancamento.service';
 import { CategoriaService } from './../categorias/categoria.service';
 import { NavbarComponent } from './navbar/navbar.component';
 import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada.component';
+import { NaoAutorizadoComponent } from './nao-autorizado.component';
 
 @NgModule({
   imports: [
@@ -27,7 +28,11 @@ import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada.component'
     ToastyModule.forRoot(),
     ConfirmDialogModule,
   ],
-  declarations: [NavbarComponent, PaginaNaoEncontradaComponent],
+  declarations: [
+     NavbarComponent,
+     PaginaNaoEncontradaComponent,
+     NaoAutorizadoComponent
+    ],
   exports: [
     NavbarComponent,
     ToastyModule,

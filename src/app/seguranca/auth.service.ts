@@ -57,7 +57,6 @@ export class AuthService {
       this.armazenarToken(token);
     }
   }
-
   temPermissao(permissao:string) {
 
     return this.jwtPayload && this.jwtPayload.authorities.includes(permissao);
@@ -81,6 +80,14 @@ export class AuthService {
     .catch (response => {
         return Promise.resolve(null);
     });
+  }
+  temQualquerPermissaoroles(roles){
+      for (const role of roles){
+        if (this.temPermissao(role)){
+          return true;
+        }
+      }
+      return false;
   }
 
 }

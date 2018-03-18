@@ -1,3 +1,4 @@
+import { AuthService } from './../seguranca/auth.service';
 import { Http, Headers, URLSearchParams } from '@angular/http';
 import { Injectable } from '@angular/core';
 

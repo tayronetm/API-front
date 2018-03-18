@@ -64,4 +64,23 @@ export class AuthService {
 
   }
 
+  obterNovoAccessToken(): Promise<void>{
+
+    const headers = new Headers();
+    headers.append('Content-Type', 'application/x-www-form-urlencoded');
+    headers.append('Authorization', 'Basic YW5ndWxhcjpAbmd1bEByMA==');
+
+    const body = 'grant_type=refresh_token';
+
+    return this.http.post(this.oauthTokenUrl, body, { headers })
+    .toPromise()
+    .then (response => {
+      this.armazenarToken(response.json().access_token);
+      return Promise.resolve(null);
+    })
+    .catch (response => {
+        return Promise.resolve(null);
+    });
+  }
+
 }

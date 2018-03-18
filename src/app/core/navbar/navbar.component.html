@@ -13,7 +13,7 @@
   </div>
   <!-- barra lateral de menu -->
   <ul class="animated fadeInRightBig navbar-menu" [hidden]="!showMain">
-    <li class="navbar-usuario">José da Silva</li>
+    <li class="navbar-usuario">{{ auth.jwtPayload?.nome }}</li>
     <li class="navbar-menuitem" routerLinkActive="ativo">
       <a routerLink="/lancamentos">Lançamentos</a>
     </li>

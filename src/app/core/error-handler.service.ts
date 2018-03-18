@@ -17,7 +17,7 @@ export class ErrorHandlerService {
     } else if (errorResponse instanceof Response
         && errorResponse.status === 401) {
       let errors;
-      msg = 'Você não está logado!';
+      msg = 'Acesso negado.';
 
       try {
         errors = errorResponse.json();

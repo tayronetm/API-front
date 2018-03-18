@@ -1,7 +1,11 @@
+
+
 import { ErrorHandlerService } from './../../core/error-handler.service';
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../auth.service';
 import { Router } from '@angular/router';
+
+
 
 @Component({
   selector: 'app-login-form',
@@ -13,8 +17,9 @@ export class LoginFormComponent {
   constructor(
     private auth: AuthService,
     private errorHandler: ErrorHandlerService,
-    private router: Router
-  ) { }
+    private router: Router,
+  ) {}
+  
 
   login(usuario: string, senha: string) {
     this.auth.login(usuario, senha)
